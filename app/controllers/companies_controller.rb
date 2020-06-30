@@ -10,7 +10,6 @@ class CompaniesController < ApplicationController
     end 
 
     def show 
-        @employee = self.employees.new
     end 
 
     def edit 
@@ -40,4 +39,5 @@ class CompaniesController < ApplicationController
     def find_company 
         @company = Company.find(params[:id])
     end 
+
 end
